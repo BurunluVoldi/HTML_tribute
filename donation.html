@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Donation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            
+            <div class="btn group">
+                <a href="SampleSite.html" target="_blank" ><button type="button" class="btn btn-warning"><h4 class="text-body">HomePage</h4></button></a>
+                <a href="elephant.html" target="_blank" ><button type="button" class="btn btn-warning"><h4 class="text-body">Elephants</h4></button></a>
+                <a href="donation.html" target="_blank" ><button type="button" class="btn btn-warning"> <h4 class="text-body">Donate</h4></button></a>
+            </div>             
+        </div>
+        <div class="container">
+            <div class="col">
+                <form action="form.php" method="get">
+                    
+                    <div class="form-group" id="email">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="enter email..." name="email">
+                    </div>
+                    
+                    <div class="form-group" id="pswd">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" placeholder="0-16 includes number" name="password">
+                    </div>
+                    
+                    <div class="form-group" id="name">
+                        <label>Name:</label>
+                        <input type="text" class="form-control" placeholder="enter name" name="name">
+                    </div>
+                    
+                    <div class="form-group" id="sname">
+                        <label>Surname:</label>
+                        <input type="text" class="form-control" placeholder="enter surname" name="surname">
+                    </div>
+                    
+                    <div class="form-group" id="radio">
+                        <label>Gender:</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="male">Male
+                        </label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="male">Female
+                        </label>
+                        </div>    
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Region:</label>
+                        <select class="form-control">
+                        <option>Africa</option>
+                        <option>South America</option>
+                        <option>North America</option>
+                        <option>Antarctica</option>
+                        <option>Asia</option>
+                        <option>Austuralia</option>
+                        <option>Europe</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group d-flex justify-content-center my-4" id="slider">
+                        <label class="mt-1">Amount:</label>
+                        <span class="font-bold indigo-text ml-3 mr-2 mt-1">1</span>
+                        <form class="range-field w-25">
+                            <input type="range" class="form-control-range border-2" min="1" max="999"  name="name">
+                        </form>
+                        <span class="font-bold indigo-text mr-2 ml-1 mt-1">999</span>
+                    </div>
+                    
+                    <div class="form-group" id="charity">
+                        <label>Which companies do you want to share your donation with:</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="WHO">WHO
+                        </label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="male">PETA
+                        </label>
+                        </div>    
+                        
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="male">Animal Rights
+                        </label>
+                        </div>  
+                    </div>
+                    
+                    <div class="form-group" id="remember">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="remember">Remember me
+                        </label>
+                    </div>
+                    
+                    
+                    <a href="#" target="_blank"><button type="submit" class="btn btn-warning"><strong>DONATE!!</strong></button></a>
+                </form>
+            </div>  
+        </div>
+        
+    </body>
+</html>

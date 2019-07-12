@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Contact</title>
+    <style>
+        .logo{
+            float:left;
+            position: relative;
+            margin-bottom: 3px;
+        }
+        .topnav{
+            overflow: hidden;
+        }
+        nav{
+            float:left;
+            overflow:hidden;
+            margin: 0;
+            text-align: center;
+            font: 15px arial, sans-serif;
+        }
+        nav ul{
+            margin=0;
+            padding=0;
+        }
+        nav ul li{
+            display:inline-block;
+            list-style-type: none;
+        }
+        nav > ul > li > a{
+            display:block;
+            padding: 1px;
+        }
+        .input{
+            margin-left: 10px;
+            
+        }
+        #layout{
+            font-family: Verdana;
+            font-size: 10pt;
+            margin-top: 10px;
+            background-color:darkgray;
+            border: solid 1px #a1a1a1;
+            padding: 10px;
+            width: 400px;
+        }
+        #layout label{
+            text-align: right;
+            padding-right: 10px;
+            width: 80px;
+        }
+        #layout input.text{
+            width: 300px;
+        }
+        #layout input.radiom{
+            width: 15px;
+            position: relative;
+            float: none;
+            
+        }
+        #layout input, #layout label{
+            display: inline-block;
+            float: left;
+            margin-bottom: 10px;
+        }
+        #layout br{
+            clear:both;
+        }
+        #layout input.buton{
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+    
+    </head>
+    
+    
+<body>
+    
+    <div class="topnav">
+    <img class="logo" src="11b8c8e0252561eab8c68326f876d9ce.png" alt="align box" align="center" width="50" height="50">
+        <nav>
+        <ul>
+            <li><a href="Main.html" target="_blank">Ana Sayfa</a></li>
+            <li><a href="contact.html" target="_blank">İletisim</a></li>
+            </ul>
+        </nav>
+    </div >  
+    
+    <div id="layout">
+    <form  method="post" action="mailto:enes.kilicarslan@yandex.com">
+    
+        <label>NAME:</label><input class="text" type="text"><br>
+    
+        <label>SURNAME:</label><input class="text" type="text"><br>
+    
+        <label>EMAIL:</label><input class="text" type="email"><br>
+    
+        <label>GENDER:</label><input class="radiom" type="radio" name="radioo" value="male">MALE <input class="radiom"  type="radio" name="radioo" value="female">FEMALE<br>
+    
+        <label>CITY</label><select name="city">
+        <option selected>OHIO</option>
+        <option>OKLAHOMA</option>
+        <option>UTAH</option>
+        </select><br>
+    
+        <label>HOBBIES</label>
+        <input class="radiom" type="checkbox" name="kontrol" value="Bilgisayar"> Bilgisayar
+        <input class="radiom" type="checkbox" name="kontrol" value="Magazin"> Magazin
+        <input class="radiom" type="checkbox" name="kontrol" value="Elektronik"> Elektronik
+        <input class="radiom" type="checkbox" name="kontrol" value="Edebiyat"> Edebiyat
+   
+        <br><input class="buton" type="submit">
+    </form>
+    </div>
+    
+    </body>
+</html>
